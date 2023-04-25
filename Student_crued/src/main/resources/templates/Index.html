@@ -24,6 +24,12 @@
                         <th>Student Name</th>
                         <th>Course</th>
                         <th>Fee</th>
+
+                        <th>Mobile Number</th>
+                        <th>Email</th>
+                        <th>Address</th>
+                        <th>Date of birth</th>
+                        <th>Year</th>
                         <th>Edit</th>
                         <th>Delete</th>
                     </tr>
@@ -34,6 +40,12 @@
                         <td th:text="${student.studentName}">StudentName</td>
                         <td th:text="${student.course}">Course</td>
                         <td th:text="${student.fees}">Fee</td>
+                        <td th:text="${student.mobNo}">Mobile Number</td>
+                        <td th:text="${student.email}">Email</td>
+                        <td th:text="${student.address}">Address</td>
+                        <td th:text="${student.dateOfBirth}">Date of Birth</td>
+                        <td th:text="${student.year}">Year</td>
+
                         <td>
                             <a th:href="@{'/edit/' + ${student.id}}">Edit</a>
                         </td>
